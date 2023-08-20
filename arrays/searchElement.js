@@ -1,13 +1,12 @@
 const arr = ["one", "two", "three", "four", "five", "six"]
-let str = "thre"
+let str = "fie"
 function searchElement(array, str) {
     for (let digit in array) {
         if (array[digit] === str) {
-            return true
+            return digit
         }
-        else{
-            return false
-        }
+        
     }
+    return -1
 }
 console.log(searchElement(arr,str))
