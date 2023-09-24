@@ -1,5 +1,13 @@
 ## Techincal Skills:
-- webScraping , Firebase  
+- webScraping , Firebase , jQuery 
+
+## Internship:
+- Software Developer            @ UpgradCampus          july'23 - Aug'23
+- Collaborated with data and backend team to design and implement new features resulting in 20% decrement of errors.
+- Gained hands-on experience with NextJS, ReactJS, MUI, mySQL, SQLalchemy while delivering high-quality code.
+- Demonstrated problem-solving skills by analyzing and resolving technical challenges during development.
+- Designed and developed 3 new pages using NextJS and received recognition from team members for contributions.
+
 
 ## Projects
 - https://github.com/nainu8700/placementadmin-react
