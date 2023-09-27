@@ -14,3 +14,4 @@
 //     console.log(`the value of ${key} is : ${myObj[key]}`)
 // }
 
+// NOTE:-  WE CANT USE FOR IN LOOP ON MAP. As they are not iterabale.
