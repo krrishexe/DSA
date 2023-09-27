@@ -44,3 +44,13 @@ const arr = ["one", "two", "three", "four", "five", "six"]
 // arr1.forEach((item, index)=>{
 //     console.log(index.name)       --> Now it will iterate through each element of tha array which is an object.
 // })
+
+
+// ----------------------------------------------------------------
+// Note - Always remember that forEach loop doesnt return anything.
+
+const storedArray = arr.forEach((item)=>{
+    return item
+})
+
+console.log(storedArray)

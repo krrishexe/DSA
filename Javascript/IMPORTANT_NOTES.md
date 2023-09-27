@@ -1,0 +1,1 @@
+1). Agar scope '{}' start kiya hai to return to karna padega  --> explicit return. 
