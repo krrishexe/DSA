@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Hello this is krish yadav</h1>
+    <button id="start">Start</button>
+    <button id="stop">stop</button>
+</body>
+<script>
+    //SetTimeout Function
+// ----------------------------------------------------------------
+    // const changeMe = setTimeout(() => {
+    //     document.querySelector('h1').innerHTML = "Setitimeut function"
+    // }, 2000);
+
+    // document.querySelector('button').addEventListener('click',()=>{
+    //     clearTimeout(changeMe)
+    // },false)
+
+    // setInterval function
+    // ----------------------------------------------------------------
+
+    const interval = function(){
+        const h1 = document.createElement('h1');
+        const text = document.createTextNode("hello")
+        h1.appendChild(text)
+        document.body.appendChild(h1)
+        console.log("happening...")
+    }
+   
+    // var hello = setInterval(interval, 1000);
+
+    document.getElementById('start').addEventListener('click',()=>{
+        hello()
+    }, false);
+
+    document.getElementById('stop').addEventListener('click',()=>{
+        clearInterval(hello)
+    },false)
+
+
+
+
+
+
+
+</script>
+</html>
