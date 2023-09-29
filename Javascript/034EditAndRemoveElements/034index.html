@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body style="background-color: #212121; color: #fff;">
+    <ul class="language">
+        <li>JavaScript</li>
+    </ul>
+</body>
+<script>
+    // Create a function that adds new li elements to the ul.
+
+    function addNewElement(str){
+        const li = document.createElement("li");
+        const text = document.createTextNode(str)
+        li.appendChild(text)
+        const ul = document.querySelector('.language')
+        // console.log(ul)
+        const ulChild = ul.appendChild(li)
+
+    }
+    addNewElement("python")
+    addNewElement("golang")
+    addNewElement("TypeScript")
+
+    // Edit the exisitng element in a ul.
+
+    function editElement(text,num){
+        const el = document.querySelector(`li:nth-child(${num})`)
+        const newLi = document.createElement('li') 
+        newLi.appendChild(document.createTextNode(text))
+        console.log(newLi)
+        el.replaceWith(newLi)
+    }
+    editElement("mojo",1)
+    editElement("Bun",4)
+
+    // remove any element from dom.
+
+    function removeElement(num){
+        const el = document.querySelector(`li:nth-child(${num})`)
+        el.remove()
+    }
+    removeElement()
+</script>
+</html>
