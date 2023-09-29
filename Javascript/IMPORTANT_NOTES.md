@@ -24,3 +24,5 @@
 6). watch the execution context (25) vala video again and make notes in copy.
 
 7). SetTimeout ko rokne ke liye clearTimeout or setInterval ko rokne ke liye clearInterval.
+
+8). 

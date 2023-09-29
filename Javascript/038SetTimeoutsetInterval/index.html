@@ -24,19 +24,22 @@
     // setInterval function
     // ----------------------------------------------------------------
 
+    let hello ;
     const interval = function(){
-        const h1 = document.createElement('h1');
-        const text = document.createTextNode("hello")
-        h1.appendChild(text)
-        document.body.appendChild(h1)
-        console.log("happening...")
+
+        hello = setInterval(changeMe,1000)
+
+        function changeMe(){
+            const h1 = document.createElement('h1');
+            const text = document.createTextNode("hello")
+            h1.appendChild(text)
+            document.body.appendChild(h1)
+            console.log("happening...")
+        }
     }
    
-    // var hello = setInterval(interval, 1000);
 
-    document.getElementById('start').addEventListener('click',()=>{
-        hello()
-    }, false);
+    document.getElementById('start').addEventListener('click',interval, false);
 
     document.getElementById('stop').addEventListener('click',()=>{
         clearInterval(hello)
