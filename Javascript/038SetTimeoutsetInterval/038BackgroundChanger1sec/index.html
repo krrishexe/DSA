@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BgChanger</title>
+</head>
+
+<body style="background-color: #212121;">
+    <div style="display: grid; place-items: center; height: 50vh;">
+        <h1 style="font-size: 50px; color: chartreuse;">Hello <br>
+            Bg Changer</h1>
+        </div>
+        <div style="display: flex; justify-content: center; gap: 50px;">
+            <button id="start">Start</button>
+            <button id="stop">Stop</button>
+        </div>
+</body>
+<script>
+
+    function randomColor(){
+        let hex = '0123456789abcdef'
+        let color = '#'
+        for (let i = 0; i < 6; i++) {
+            color += hex[Math.floor(Math.random() * 16)]
+            // to get a random number from 0 - 16
+        }
+        console.log(color)
+        return color
+    }
+
+    let random;
+
+    const startChangingColor = function(){
+        
+        random = setInterval(() => {
+            document.body.style.backgroundColor = randomColor()
+        }, 1000);
+    }
+
+    const stopChangingColor = function(){
+        clearInterval(random);
+    }
+    document.getElementById('start').addEventListener('click',startChangingColor,false);
+    document.getElementById('stop').addEventListener('click',stopChangingColor,false);
+
+
+    // console.log(startChangingColor())
+</script>
+
+</html>
