@@ -18,17 +18,27 @@
         </div>
 </body>
 <script>
-
+    let arr = [];
     function randomColor(){
         let hex = '0123456789abcdef'
         let color = '#'
         for (let i = 0; i < 6; i++) {
             color += hex[Math.floor(Math.random() * 16)]
             // to get a random number from 0 - 16
+            // console.log(color)
         }
-        console.log(color)
         return color
     }
+
+    //How to push some random colors into an array.
+
+    // function pushIntoArray(){
+    //     arr.push(randomColor())
+    // }
+    // setInterval(() => {
+    //     pushIntoArray()
+    //     console.log(arr)
+    // }, 1000);
 
     let random;
 
@@ -46,7 +56,7 @@
     document.getElementById('stop').addEventListener('click',stopChangingColor,false);
 
 
-    // console.log(startChangingColor())
+    console.log(startChangingColor())
 </script>
 
 </html>
