@@ -25,4 +25,12 @@
 
 7). SetTimeout ko rokne ke liye clearTimeout or setInterval ko rokne ke liye clearInterval.
 
-8). 
+8). JSON.parse() string ko json me convert kar deta hai.
+
+9). Before fetch came , we used xmlHttpRequest to work with API's.
+
+10). Blocking code  === synchronous , Non-Blocking code === asynchronous.   
+
+11). Js Engine >>> (2 parts) -- Memory heap(all the variables initialised are stored here) -- call stack(Global execution context to banta hi banta hai fir vo function jo call hote hai ek ke upar ek.).
+
+12). 
