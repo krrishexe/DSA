@@ -33,4 +33,4 @@
 
 11). Js Engine >>> (2 parts) -- Memory heap(all the variables initialised are stored here) -- call stack(Global execution context to banta hi banta hai fir vo function jo call hote hai ek ke upar ek.).
 
-12). 
+12). Arrays, Functions , strings have access to all the properties of object as they are inherited from object . 
