@@ -34,3 +34,7 @@
 11). Js Engine >>> (2 parts) -- Memory heap(all the variables initialised are stored here) -- call stack(Global execution context to banta hi banta hai fir vo function jo call hote hai ek ke upar ek.).
 
 12). Arrays, Functions , strings have access to all the properties of object as they are inherited from object . 
+
+13). call() method passes the current execution context to another function.
+
+14). document.setAttribute('href', 'http://google.com')  sets the attribute of any html tag.
