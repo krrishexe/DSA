@@ -80,7 +80,7 @@ console.log(userOne.randomGenerateId())  // here it will not work bcz of static.
 
 // ----------------------------------------------------------------
 
-// class name{
+// class nameofclass{
 //     constructor(saari properties){
 //         // properties set kardo
 //         this.properties = properties;
