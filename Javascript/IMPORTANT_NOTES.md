@@ -44,3 +44,5 @@
 16). Get and Set value in a class should always be same.
 
 17). documen.getelementById('orange').onclick = function(){}  // onlclick ko ek function chahiye hota hai.
+
+18). In closures , whenever the outer function leaves , it leaves its lexical enviornment (variables.) with the inner function.
