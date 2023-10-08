@@ -40,3 +40,7 @@
 14). document.setAttribute('href', 'http://google.com')  sets the attribute of any html tag.
 
 15). (video = 47) , Object.getOwnPropertyDescriptors(objName, "property") returns an object with some properties of object like (enumerable, configurable, writable) & if Writable == false , then we can't change that object property. for example : - we cant change the value of Math.PI . 
+
+16). Get and Set value in a class should always be same.
+
+17). documen.getelementById('orange').onclick = function(){}  // onlclick ko ek function chahiye hota hai.
