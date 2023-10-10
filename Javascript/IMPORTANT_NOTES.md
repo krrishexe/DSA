@@ -46,3 +46,13 @@
 17). documen.getelementById('orange').onclick = function(){}  // onlclick ko ek function chahiye hota hai.
 
 18). In closures , whenever the outer function leaves , it leaves its lexical enviornment (variables.) with the inner function.
+
+ ## React ------------------------------------------------------------------------------------------------
+
+19). React reacts to updation of variables.
+
+20). **Reconsilation in react** :- its an algorithm that diffrentiate between two trees (Virtual DOM & Real DOM). if it finds any difference between those two, it will update and rerender the vDOM for that particular differnece and not update the whole webpage.
+
+21). .createRoot() method flushes all the HTML,JSX code to the VDOM and then it compares it with the realDOM.
+
+22). React Fiber Architecture works on scheduling bascially to improve performance.
