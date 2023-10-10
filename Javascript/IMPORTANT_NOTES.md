@@ -56,3 +56,7 @@
 21). .createRoot() method flushes all the HTML,JSX code to the VDOM and then it compares it with the realDOM.
 
 22). React Fiber Architecture works on scheduling bascially to improve performance.
+
+23). useRef hook gives you the reference of any HTML tag and it must be stored inside any variable.
+
+24). useCallback hook memoizes or optimizes your application.
