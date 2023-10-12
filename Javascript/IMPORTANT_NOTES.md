@@ -59,4 +59,6 @@
 
 23). useRef hook gives you the reference of any HTML tag and it must be stored inside any variable.
 
-24). useCallback hook memoizes or optimizes your application.
+24). useCallback hook memorizes or optimizes your application. its basically used to improve performance of the react application.
+
+25). ## ContextApi - ['./ContextAPI.md']

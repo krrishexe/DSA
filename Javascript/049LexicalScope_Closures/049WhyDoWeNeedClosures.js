@@ -36,6 +36,7 @@ function bgChanger(color){
     // when we are returning a new function here, notice that the outer function variable(color) is gone with it.
     // but here in inner function we are using that variable color.
     // this is happening because of closures.
+    // the outer function when leaves , leaves its lexical environment with the inner function.
     
     return function(){
         document.body.style.backgroundColor = `${color}`
