@@ -42,15 +42,18 @@ const arr = ["one", "two", "three", "four", "five", "six"]
 // ]
 
 // arr1.forEach((item, index)=>{
-//     console.log(index.name)       --> Now it will iterate through each element of tha array which is an object.
+//     console.log(item)       //--> Now it will iterate through each element of tha array which is an object.
 // })
 
 
 // ----------------------------------------------------------------
 // Note - Always remember that forEach loop doesnt return anything.
 
-const storedArray = arr.forEach((item)=>{
-    return item
-})
+// const storedArray = arr.forEach((item)=>{
+//     return item                          // it will not return anything
+// })
+// const storedArray = arr.map((item)=>{
+//     return item                          // but it will produce an array .
+// })
 
 console.log(storedArray)

@@ -13,6 +13,10 @@
 //     },
 // ]
 
+// for(const key of arr1){
+//     console.log(key)
+// }
+
 // const str ="Hello world!"
 // for (const letter of str) {
 //     if(letter == " "){
