@@ -47,18 +47,25 @@
 
 18). In closures , whenever the outer function leaves , it leaves its lexical enviornment (variables.) with the inner function.
 
+19). Intersection and Union of two sets :
+    --> Intersection : new Set([...mySet1].filter(x => mySet2.has(x)))
+    --> Union : new Set([...mySet,...mySet1])
+    
+
  ## React ------------------------------------------------------------------------------------------------
 
-19). React reacts to updation of variables.
+1). React reacts to updation of variables.
 
-20). **Reconsilation in react** :- its an algorithm that diffrentiate between two trees (Virtual DOM & Real DOM). if it finds any difference between those two, it will update and rerender the vDOM for that particular differnece and not update the whole webpage.
+2). **Reconsilation in react** :- its an algorithm that diffrentiate between two trees (Virtual DOM & Real DOM). if it finds any difference between those two, it will update and rerender the vDOM for that particular differnece and not update the whole webpage.
 
-21). .createRoot() method flushes all the HTML,JSX code to the VDOM and then it compares it with the realDOM.
+3). .createRoot() method flushes all the HTML,JSX code to the VDOM and then it compares it with the realDOM.
 
-22). React Fiber Architecture works on scheduling bascially to improve performance.
+4). React Fiber Architecture works on scheduling bascially to improve performance.
 
-23). useRef hook gives you the reference of any HTML tag and it must be stored inside any variable.
+5). useRef hook gives you the reference of any HTML tag and it must be stored inside any variable.
 
-24). useCallback hook memorizes or optimizes your application. its basically used to improve performance of the react application.
+6). useCallback hook memorizes or optimizes your application. its basically used to improve performance of the react application.
 
-25). ## ContextApi - ['./ContextAPI.md']
+7). ## ContextApi - ['./ContextAPI.md']
+
+8). We can use more than one useEffect in a single application.
