@@ -12,13 +12,28 @@ mySet2.add('y')
 mySet2.add('z')
 const myset3 = new Set([...mySet].filter(a => mySet2.has(a)))        // taking the intersection.
 const mySet4 = new Set([...mySet,...mySet2])                         // Union of two sets.
-console.log(mySet4)
+// console.log(mySet4)
 
 
+// ----------------------------------------------------------------
+// Symbols:
+// they are used for making an element unique.
 
 // const mySym = Symbol(1)
-// const obj = {
-//     id:"krish",
-//     [mySym]:1
-// }
-// console.log(obj[mySym])
+// const mySym2 = Symbol(1)
+// console.log(mySym === mySym2)
+
+// const mySym = Symbol.has(1)
+// const mySym2 = Symbol.has(1)
+// console.log(mySym === mySym2)
+
+// UseCase :
+const id = Symbol('id')
+const obj ={
+    [id]:1234,
+    lastName : "John",
+}
+for(let key in obj) {
+    console.log(key)
+}
+// id remains hidden even if we are looping on the object.

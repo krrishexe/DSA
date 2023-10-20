@@ -33,6 +33,10 @@
 
 12). **Limit** 
     Select select_list from table_name limit [offset] row_count;
-    *Offset* & *row_count* - Offset is just like array index which also starts from zero. 
-    select customerNumber,customerName ,creditlimit from customers oder by creditlimit desc limit 5;
-    select customerNumber,customerName ,creditlimit from customers oder by creditlimit,customerNumber desc limit 5;
+    *Offset* & *row_count* - Offset is just like array index which also starts from zero. And it excludes offset while querying. 
+    select customerNumber,customerName ,creditlimit from customers order by creditlimit desc limit 5;
+    select customerNumber,customerName ,creditlimit from customers order by creditlimit,customerNumber desc limit 5;
+
+13). **Count** :
+    select count(select_list) from table_name .
+    converts the numbers of values in columns to a number.

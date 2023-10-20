@@ -56,4 +56,4 @@ const arr = ["one", "two", "three", "four", "five", "six"]
 //     return item                          // but it will produce an array .
 // })
 
-console.log(storedArray)
+// console.log(storedArray)
