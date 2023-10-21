@@ -4,7 +4,9 @@
 
 // ----------------------------------------------------------------
 
-// const nums = [1,2,3,4,5,6,7,8,9]
+const nums = [1,2,3,4,5,6,7,8,9]
+// const newNums = nums.map((a,b)=>a+b)
+console.log(newNums)
 // const newNums = nums.map((num) => num + 10)
 
 // console.log(newNums)
@@ -26,11 +28,11 @@
 // ----------------------------------------------------------------
 //Custom IMplementation of Array.Map()
 
-const nums = [1, 2, 3, 4, 5, 6, 7, 8, 9]
+// const nums = [1, 2, 3, 4, 5, 6, 7, 8, 9]
 
-const newArr =[]
+// const newArr =[]
 
-nums.forEach((num)=>{
-    return newArr.push(num+10)
-})
-console.log(newArr)
+// nums.forEach((num)=>{
+//     return newArr.push(num+10)
+// })
+// console.log(newArr)

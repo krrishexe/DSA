@@ -50,7 +50,11 @@
 19). Intersection and Union of two sets :
     --> Intersection : new Set([...mySet1].filter(x => mySet2.has(x)))
     --> Union : new Set([...mySet,...mySet1])
-    
+
+20). why do we use callback inside HOF ?
+    --> When we just want to pass the reference of the function to the higher order function , we use callbacks.
+    --> when we have a function to pass but it requires an argument , we just cant pass it like this : onClick = {dispatch(removeTodo)}
+        so we use it like this onClick ={()=>{dispatch(removeTodo)}}
 
  ## React ------------------------------------------------------------------------------------------------
 

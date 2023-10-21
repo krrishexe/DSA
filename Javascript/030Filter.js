@@ -31,10 +31,10 @@
 
 const nums = [1, 2, 3, 4, 5, 6, 7, 8, 9]
 
-const newArr = []
-for (const num of nums) {
-    if(num>5){
-        newArr.push(num)
-    }
-}
-console.log(newArr)
+// const newArr = []
+// for (const num of nums) {
+//     if(num>5){
+//         newArr.push(num)
+//     }
+// }
+// console.log(newArr)
