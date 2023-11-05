@@ -73,3 +73,18 @@
 7). ## ContextApi - ['./ContextAPI.md']
 
 8). We can use more than one useEffect in a single application.
+
+9). LOCALSTORAGE - To store something in your local storage of the browser.
+--> it accepts only key value pairs and that too in strings only.
+--> only two methods , localStorage.setItem() and localStorage.getItem().
+--> ex: - localStorage.setItem('user',JSON.stringify(data.user))
+## Backend ------------------------------------------------------------------------------------------------
+
+1). What are Services ?
+ --> Suppose that you have used BAAS (Backedn as a service) for a project and then the client   demands that he wants to use his own server , so here services comes in the picture.
+ --> Because of Services we dont have to write the whole backend code again, also we can categorise services as AuthServices , DataBase Services, Bucket Services etc.
+
+2). Hamesha jab bhi Database se baat karni ho yaa fir kuch bhi database ka kaam ho , we use two things :
+--> Trycatch block
+--> Async/await or promises (.then,.catch).
+
