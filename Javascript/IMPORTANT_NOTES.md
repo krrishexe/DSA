@@ -78,6 +78,7 @@
 --> it accepts only key value pairs and that too in strings only.
 --> only two methods , localStorage.setItem() and localStorage.getItem().
 --> ex: - localStorage.setItem('user',JSON.stringify(data.user))
+
 ## Backend ------------------------------------------------------------------------------------------------
 
 1). What are Services ?
@@ -87,4 +88,26 @@
 2). Hamesha jab bhi Database se baat karni ho yaa fir kuch bhi database ka kaam ho , we use two things :
 --> Trycatch block
 --> Async/await or promises (.then,.catch).
+
+3). **How to Connect to the database** 
+--> Make a .db file make an async function containing the trycatch block. inside that use mongoose.connect('mongodbURI') , it will return a promise.
+--> export that function in the index file and then use .then.catch to capture that promise and inside this .then function listen to the server. 
+
+4). **JWT** :-
+--> this jwt.sign() method generate a token.
+--> it requires 3 things, FIRST :- payload data, SECOND :- ACCESS_TOKEN_SECRET , THIRD :- ACCESS_TOKEN_EXPIRY.
+ex:-
+jwt.sign(
+        {
+            _id: this._id,
+            username: this.username,
+            email: this.email,
+            fullName: this.fullName
+        },
+        process.env.ACCESS_TOKEN_SECRET,
+        {
+            expiresIn:process.env.ACCESS_TOKEN_EXPIRY
+        }
+    )
+
 
