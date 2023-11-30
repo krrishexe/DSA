@@ -51,7 +51,7 @@ const arr1 = [
 // Map also does not allows you take create duplicate keys.
 // it takes key value pairs as its input.
 
-// const map = new Map()
+const map = new Map()
 // map.set('a',1)
 // map.set('b',2)
 // map.set('c',3)
@@ -59,11 +59,11 @@ const arr1 = [
 // map.set('a',55)
 // console.log(map.get('a'));
 // map.delete('a')
-// console.log(map)
-// console.log(map.size)
+console.log(map)
+console.log(map.size)
 // console.log(map) 
-// console.log(map.has('a'))
-// console.log(map.keys())
+console.log(map.has('a'))
+console.log(map.keys())
 
 // for (const key of map.keys()) {
 //     console.log(key)
