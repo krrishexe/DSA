@@ -79,6 +79,9 @@
 --> only two methods , localStorage.setItem() and localStorage.getItem().
 --> ex: - localStorage.setItem('user',JSON.stringify(data.user))
 
+10). Export Deafult me hum curly braces use nahi karte. 
+ --> whereas, normal exports me curly brackets use karna compulsory hota hai.
+
 ## Backend ------------------------------------------------------------------------------------------------
 
 1). What are Services ?
