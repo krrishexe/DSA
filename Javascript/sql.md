@@ -40,3 +40,8 @@
 13). **Count** :
     select count(select_list) from table_name .
     converts the numbers of values in columns to a number.
+
+14). **Truncate** : drop deletes the whole table or columns , but truncate deletes only the data but truncate removes only the data , the structure of the table remains same.
+
+14). **Grant and Revoke** : Grant access to the special permissions to the user and revokes takes those permissions from the user. 
+

@@ -35,6 +35,7 @@ class User{
 
 class Student extends User{                 // Hamesha Second parameter (User) parent class hoti hai.
     constructor(username, birthday, course){
+                                            // super humesha constructor ke andar call hota hai.
         super(username)                    // iska sirf ye mtlb hai ki username ki value ye User class se laa raha hai.
         this.birthday = birthday;
         this.course = course;
@@ -47,7 +48,7 @@ class Student extends User{                 // Hamesha Second parameter (User) p
 
 const studentOne = new Student('krish','14 Nov', 'science')
 const studentTwo = new User('krish')
-
+studentOne.addCourse('maths')
 // studentOne.logMe()  // children ke pass parent ki properties ka access hota hai. 
 // studentTwo.addCourse()  // par parent ke pass children ki properties ka access nahi hota hai.
 
@@ -73,7 +74,7 @@ class Example extends User{
 
 const userOne = new Example('krish');
 userOne.logMe();
-console.log(userOne.randomGenerateId())  // here it will not work bcz of static. 
+// console.log(userOne.randomGenerateId())  // here it will not work bcz of static. 
 
 // Note:- Static keyword use karne ke baad vo property normal log access nahi kar sakte , usecase is jab hum logo ko nahi dikhana chahte id's in database
 
@@ -90,4 +91,4 @@ console.log(userOne.randomGenerateId())  // here it will not work bcz of static.
 //     }
 // }
 
-// const hello = new name("hello");
+// const hello = new nameofclass("properties");

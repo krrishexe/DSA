@@ -57,7 +57,7 @@ function User(username, password, email){
     
     return this;
 }
-
+// console.log(User()) --> undefined
 // Why use 'new' or constructor function?
 // agar hum ye 'new' use nahi karenge to cheeze overwrite ho jaati hai , purani cheeze jinki hume jarurat thi vo overwrite ho jati hai.
 
@@ -70,8 +70,8 @@ function User(username, password, email){
 
 const userone = new User("krish",1212,'k@mail.com');
 const usertwo = new User("yadav",4444,'k@mail.com');
-console.log(userone)
-console.log(usertwo)
+// console.log(userone.password)
+// console.log(usertwo)
 
 
 // NOTE:- whenever we use new 

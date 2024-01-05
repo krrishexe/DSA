@@ -89,12 +89,23 @@
 //example:- 
 
 
-const res = fetch("https://jsonplaceholder.typicode.com/users")
-.then((response)=>{
-    return response.json()
-})
-.then((data)=>{
-    console.log(data)
-})
-.catch((error)=>{error})
+// const res = fetch("https://jsonplaceholder.typicode.com/users")
+// .then((response)=>{
+//     return response.json()
+// })
+// .then((data)=>{
+//     console.log(data)
+// })
+// .catch((error)=>{error})
+
+const fetchFn = async () =>{
+    let text = await fetch("https://jsonplaceholder.typicode.com/users")
+    .then((response)=>{
+        return response.json()
+    })
+    .then((data)=>{
+        console.log(data)
+    })
+}
+fetchFn()
 

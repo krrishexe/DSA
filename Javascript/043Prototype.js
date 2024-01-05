@@ -52,7 +52,7 @@ Array.prototype.sayHello = function(){
 
 // arr.sayHello() // => only array willhave access to it .
 // userOne.sayHello    // no access
-// str.sayHello        // no access
+// str.sayHello()       // no access
 // obj.sayHello        // no access
 
 const obj2 ={
