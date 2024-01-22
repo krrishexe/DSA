@@ -11,11 +11,11 @@ class User{
     }
     set username(username){
         this._username = username;
-        console.log(`set username ${username}`)
+        // console.log(`set username ${username}`)
     }
 
     get password(){
-        console.log((this._password).toUpperCase())
+        console.log((this._password))
     }
     set password(password){
         this._password = password;
@@ -24,4 +24,5 @@ class User{
 const krish  = new User('krish','123@abc')
 // krish.getUsername()
 krish.username
-console.log(krish.password)
+krish.password
+// console.log(krish.password)

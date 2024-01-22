@@ -84,6 +84,11 @@
 
 ## Backend ------------------------------------------------------------------------------------------------
 
+*NOTE* - **ERROR** - "cannot use import statement outside a module"
+            --> Require() statements are used in commonJs files && import statements are used in modules in js.
+       - *Solution* - This error is because we are using import statement in commonJS but, we cant use them.
+        (To get rid of this error , we can set the "type" property in package.json file to "module") 
+
 1). What are Services ?
  --> Suppose that you have used BAAS (Backedn as a service) for a project and then the client   demands that he wants to use his own server , so here services comes in the picture.
  --> Because of Services we dont have to write the whole backend code again, also we can categorise services as AuthServices , DataBase Services, Bucket Services etc.
