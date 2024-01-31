@@ -102,19 +102,20 @@
 --> export that function in the index file and then use .then.catch to capture that promise and inside this .then function listen to the server. 
 
 4). **JWT** :-
+--> Jwt is a bearer token, if user is already logged in then  they must possess the access token so thst they dont have to login again nd   again. unlike LPU.
 --> this jwt.sign() method generate a token.
---> it requires 3 things, FIRST :- payload data, SECOND :- ACCESS_TOKEN_SECRET , THIRD :- ACCESS_TOKEN_EXPIRY.
+--> it requires 3 things, FIRST :- payload (data), SECOND :- ACCESS_TOKEN_SECRET , THIRD :- ACCESS_TOKEN_EXPIRY.
 ex:-
 jwt.sign(
-        {
+        {                               //Payload
             _id: this._id,
             username: this.username,
             email: this.email,
             fullName: this.fullName
         },
-        process.env.ACCESS_TOKEN_SECRET,
+        process.env.ACCESS_TOKEN_SECRET,    //SECRET
         {
-            expiresIn:process.env.ACCESS_TOKEN_EXPIRY
+            expiresIn:process.env.ACCESS_TOKEN_EXPIRY   //EXPIRY
         }
     )
 
