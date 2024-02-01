@@ -45,6 +45,14 @@
 
 17). documen.getelementById('orange').onclick = function(){}  // onlclick ko ek function chahiye hota hai.
 
+21). *Differnce between '.getElementByClassName' and '.querySelectorAll'*
+    --> .getElementByClassName returns a **HTMLCollection** whereas .querySelectorAll returns a **NodeList**.
+    --> .getElementByClassName is faster than .querySelectorAll.
+
+**NOTE** - what are HTMLCollection and NodeList ?
+    --> HTMLCollection is an array like object which contains all the live, ordered collection of HTMl elements. automatically updates the changes in DOM.
+    --> NodeList is also an array like object which contains all the elements of the DOM. Its not live and doesnt automatically     updates the changes in DOM. 
+
 18). In closures , whenever the outer function leaves , it leaves its lexical enviornment (variables.) with the inner function.
 
 19). Intersection and Union of two sets :
@@ -119,4 +127,4 @@ jwt.sign(
         }
     )
 
-
+5). **Import and Export** :-
