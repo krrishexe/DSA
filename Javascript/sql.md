@@ -4,6 +4,9 @@
 2). use database_Name;
 3). select * from Table_Name;
 4). show **columns** from Table_Name;
+->  select city **As** 'cities' from customers;
+->  select phone,city from customers **order by** city;
+-> 
 5). **Where** ex:- 
     select firstName from employees *where* firstName = 'Mary';
 

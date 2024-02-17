@@ -12,6 +12,8 @@ Note :- *ByteCode is not readable by human and is much faster than script code.*
                 --> hello_world.cpython-311.pyc
 
 **PVM (Python Virtual Machine)**
--> Code loop to iterate over the ByteCode and execute it (runtime engine).
+-> loop over code to iterate over the ByteCode and execute it (runtime engine).
 -> also known as Python Interpreter.
 -> Byte code !== Machine code (machine code directly talks to the hardware(cpu)).
+
+**Data types**:
