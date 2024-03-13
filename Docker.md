@@ -37,3 +37,18 @@
 - docker run -it -e key=value -p 9000:9000 <image_name>
 
 - -t (stands for "tag")
+
+- *Docker Compose* :
+- (agar tumhe multiple containers ko ek sath run karna hai toh docker-compose use karo)
+- docker-compose up (basically to run the docker-compose.yml file) (docker-compose.yml file me saare containers ke configurations hote hai)
+- docker-compose down (to stop the containers)
+- docker-compose up -d (to run the containers in the background) (-d detached mode)
+- docker-compose ps (to see the status of the containers)
+
+- *Docker Push* :
+- to push the image to the docker hub.
+- docker logout
+- docker login
+- docker tag <image_name> <docker_hub_username>/<image_name>
+- docker push <docker_hub_username>/<image_name>
+- docker pull <docker_hub_username>/<image_name>
