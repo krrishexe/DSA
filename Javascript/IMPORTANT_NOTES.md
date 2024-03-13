@@ -115,8 +115,7 @@
 --> there are two types of tokens , refresh token and access token.
 --> Refresh token and access token are generally same just that the expiry of refresh token (15d) is long as compared to access token. (1d).
 --> Jwt is a bearer token, if user is already logged in then  they must possess the access token so thst they dont have to login again nd   again. unlike LPU.
---> this jwt.sign() method generate a token.
---> it requires 3 things, FIRST :- payload (data), SECOND :- ACCESS_TOKEN_SECRET , THIRD :- ACCESS_TOKEN_EXPIRY.
+--> thitests 3 things, FIRST :- payload (data), SECOND :- ACCESS_TOKEN_SECRET , THIRD :- ACCESS_TOKEN_EXPIRY.
 ex:-
 jwt.sign(
         {                               //Payload
