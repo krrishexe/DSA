@@ -52,3 +52,46 @@
 - docker tag <image_name> <docker_hub_username>/<image_name>
 - docker push <docker_hub_username>/<image_name>
 - docker pull <docker_hub_username>/<image_name>
+
+
+
+
+
+
+
+
+## kubectl and minikube :
+- kubectl : kubernetes command line tool
+- minikube : local kubernetes cluster
+
+- basically kubernetes ko chalane ke liye hume ek cluster (minikube) chahiye hota hai. or vo cluster hum local machine pe bhi bana sakte hai using minikube. or ye kubernetes ek container me install hota hai using docker.
+
+- *kubectl and Minikube Commands* :
+- minikube start (to start the minikube cluster)
+- minikube status (to check the status of the minikube cluster)
+- minikube stop (to stop the minikube cluster)
+
+- kubectl config current-context (to check the current context of kubectl)
+- kubectl config get-contexts (to get the list of all the running contexts)
+- kubectl config use-context <context_name>(minikube) (to switch the context)
+- kubectl get nodes (to get the list of nodes)
+- kubectl get pods (to get the list of pods)
+- kubectl delete pod <pod_name> (to delete the pod)
+- kubectl describe pod <pod_name> (to get the details of that particular pod)
+- kubectl get services (to get the list of services)
+- kubectl get services <service_name> (to get the list of that particular service)
+- kubectl describe service <service_name> (to get the details of that particular service)
+- kubectl apply -f <file_name> (to apply the configuration file)
+
+
+## Please do follow these commands to push Docker Image to Artifact Registry --> 
+    - video : https://www.youtube.com/watch?v=bk3LjHHWyyA
+
+docker build -t 
+
+gcloud services enable artifactregistry.googleapis.com
+gcloud artifacts repositories create {repo-name} --repository-format=docker --location=us-central1 --description="created repo"
+gcloud auth configure-docker us-central1-docker.pkg.dev
+
+docker tag {local-image-name} us-central1-docker.pkg.dev/{project-name}/{repo-name}/{gcp-image-name}
+docker push us-central1-docker.pkg.dev/{project-name}/{repo-name}/{gcp-image-name}
