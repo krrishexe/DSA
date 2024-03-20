@@ -18,3 +18,5 @@ class Person implements PersonInterface {
 
 const krish = new Person('krish',21)
 console.log(krish.greet())
+
+export {}
