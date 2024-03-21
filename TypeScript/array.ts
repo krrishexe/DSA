@@ -39,8 +39,15 @@ function getFirstElement1 <T>(arr:T[]){
     //T stands for template.
 }
 
+function swap(a:string,b:string): string[] {
+    return [b , a]
+}
 
-
+function swap1 <T,P>(a:T,b:P):[P,T]{
+    return [b,a]
+}
+const ans1 = swap1("a","b")
+console.log(ans1)
 
 
 

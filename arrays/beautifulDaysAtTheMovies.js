@@ -1,18 +1,13 @@
 function beautifulDays(i, j, k) {
     // Write your code here
-    let arr = []
-    function revNum(num) {
-        let strNum = parseInt(num.toString().split('').reverse().join(''))
-        return strNum
-    }
-    for (let a = i; a <= j; a++) {
-        console.log("outer : " + a)
-        if ((a - (revNum(a)) / k) === Math.round((a - (revNum(a)) / k))) {
-            console.log(a)
-            arr.push(a)
+    let beautifulDays = []
+    for (let p = i; p <= j; p++) {
+        let revNum = Number(p.toString().split('').reverse().join(''))
+        let diff = Math.abs(p - revNum)
+        if (!Number.isInteger(diff/k)) {
+            beautifulDays.push(diff/k)
         }
-        
     }
-    return arr
+    return beautifulDays.length
 }
 console.log(beautifulDays(20, 23, 6))
