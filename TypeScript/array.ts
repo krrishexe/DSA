@@ -1,5 +1,5 @@
 const heroes: string[] = ["a", "b", "c"]
-const newArr: Array<number> = []
+const newArr: Array<number> = []     // generics 
 
 type User = {
     name: string
@@ -18,5 +18,32 @@ const matrix: number[][] = [
 
 matrix.push([1, 2, 3])
 console.log(matrix)
+
+
+
+
+
+type arr = number[] | string[]
+// type arr = (number | string)[]
+function getFirstElement(arr: arr): (string | number) {
+    return arr[0]
+}
+const arr1 = [1, 2, 3]
+const arr2 = ["1", "2", "3"]
+
+const ans = getFirstElement(arr1)
+console.log(ans)
+
+
+function getFirstElement1 <T>(arr:T[]){
+    //T stands for template.
+}
+
+
+
+
+
+
+
 
 export { }
