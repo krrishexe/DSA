@@ -95,3 +95,89 @@ gcloud auth configure-docker us-central1-docker.pkg.dev
 
 docker tag {local-image-name} us-central1-docker.pkg.dev/{project-name}/{repo-name}/{gcp-image-name}
 docker push us-central1-docker.pkg.dev/{project-name}/{repo-name}/{gcp-image-name}
+
+
+
+
+
+*Harkirat video 9.2*
+## Deploying Backend on AWS (EC2) :
+
+- *Steps* :
+- Create an EC2 instance. 
+- Add a name to the instance. 
+- choose the OS. 
+- choose Instance Type. 
+- Add Key pair login and download the certificate. 
+- Create Security Group.  
+- configure security group and add inbound rules. (Now we need to open the following ports of that VM/Instance) : 22 (Used for ssh protocol), 80 (for localhost or http connections), 443 (for https connections), 5000 (Port at which your application is running).
+- we need to open both IPv4 and IPv6 connections to these ports.
+- Now launch the instance.
+- Now connect to the instance using ssh.
+- Go to your local machine terminal where the certificate is downloaded and run the following command : 
+    - ssh -i "your-key.pem" ubuntu@your-machine-public-ip-domain.com
+- Now you are connected to the instance.
+- now clone your repository in the instance. using the following command : 
+    - git clone <repository-url>
+- Now install the dependencies of the project.
+- Now run the application.
+- Now to keep the application running even if you close the terminal , we need to instll PM2.
+- To install PM2, run the following command : 
+    - npm install pm2 -g
+- Now cd into the project directory and run the following command : 
+    - pm2 start app.js
+    - pm2 status
+    - pm2 kill
+    - pm2 logs
+- Now you can access the application using the public ip of the instance.
+
+
+## Github Actions || CI/CD :
+- Github Actions are used to automate the workflow of the project. 
+- these are yaml files that are stored in the .github/workflows directory.
+- these files contain the steps that are to be executed when a particular event occurs.
+- ex:- let say whenever a commit is pushed to the main branch of our directory. we want the changes to occur in the EC2 instance. so we can write a github action for   that.
+
+## Poiniting Domain to EC2 Instance's Public IP :
+- first buy a domain from google domains or namecheap.
+- now go to the domain settings and add the public ip of the EC2 instance in the A record of the domain.
+- now you can access the application using the domain name.
+
+## Reverse Proxy :
+- Reverse Proxy is used to route the incoming requests to the appropriate server.
+- for ex:- let say we have multiple servers running on the same machine. and we want to route the requests to the appropriate server based on the domain name. we can use reverse proxy for that.
+- ![alt text](image.png)
+- frontend.krish.social.com -> frontend server running on port 3000
+- backend.krish.social.com -> backend server running on port 5000 
+- for this we can use Nginx as a reverse proxy server.
+- Nginx sits on port 80 and routes the requests to the appropriate server based on the domain name using the nginx.conf file.
+
+- Go to the EC2 instance and install Nginx using the following command : 
+    - sudo apt-get update
+    - sudo apt-get install nginx
+- Now start the Nginx server using the following command :
+    - sudo systemctl start nginx
+- Now go to the /etc/nginx/nginx.conf file and remove the prewritten code and write your own code.
+- Now add the following code to the file : 
+    - http {
+        server {
+            listen 80;
+            server_name backend.krish.social.com;
+            location / {
+                proxy_pass http://localhost:5000;
+            }
+        }
+    }
+- Now restart the Nginx server using the following command :
+    - sudo nginx -s reload
+- Now you can access the backend server using the domain name.
+
+- Now restart the Nginx server using the following command : 
+    - sudo systemctl restart nginx 
+- Now you can access the frontend server using the domain name.
+
+- or if you cant remember the nginx watch piyush garg nginx video. (https://www.youtube.com/watch?v=ofBFl4M4BFk)
+
+
+## SSL Certificate :
+- piyush garg video : https://www.youtube.com/watch?v=ofBFl4M4BFk

@@ -1,10 +1,10 @@
 function nonDivisibleSublet(k, s) {
+    
     let sublet = new Set()
-    console.log("one,", sublet)
 
     for (let i = 0; i < k.length; i++) {
         for (let j = i + 1; j < k.length; j++) {
-            console.log("two,", sublet)
+            
             if ((k[i] + k[j]) % s !== 0) {
                 // vahi add karo jo arr me already exist nahi karta or jinka sum including the rest of the array % s !== 0
                 let sum;
@@ -12,14 +12,18 @@ function nonDivisibleSublet(k, s) {
                     return acc+el;
                 },0)
                 console.log(sum)
-                if([...sublet].includes(k[i])  sum %s !== 0){
-                    sublet.add(k[i])
+
+                for(let x = 0;x<k.length;x++){
+                    if((k[x]+sum)%s===0){
+                        console.log(k[x])
+                        break;
+                    }
                 }
                 
             }
         }
     }
-    console.log("three,", sublet)
+    
     return sublet.size
 }
 
