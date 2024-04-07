@@ -1,19 +1,15 @@
 function repeatedString(s, n) {
     let initLength = s.length;
     let remaining = n - s.length;
+    
+    let newArr = s.split('')
 
-    for(let i=0;i<n,i++){
-        
+    for(let i=0;i<remaining;i++){
+        newArr.push(s[i])
+        //agar s khtm ho jaye to dubara s laga do
     }
-    let newArr = s.split()
-    newArr.splice(1, 0, s)
-    return newArr
+    return newArr.join('')
 
-
-
-    // let arr = s.split('').sort();
-    // let count = arr.lastIndexOf('a')
-    // return count + 1
 }
 
-console.log(repeatedString("abcab", 10))
+console.log(repeatedString("aba", 10))
