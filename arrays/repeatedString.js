@@ -1,7 +1,9 @@
 function repeatedString(s, n) {
     let initLength = s.length;
     let remaining = n - s.length;
-    
+    if(initLength === 1){
+        return n
+    }    
     let newArr = s.split('')
 
     for(let i=0;i<remaining;i++){
@@ -11,4 +13,4 @@ function repeatedString(s, n) {
 
 }
 
-console.log(repeatedString("abcac", 10))
+console.log(repeatedString("ba", 100))
