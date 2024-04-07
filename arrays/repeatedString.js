@@ -5,11 +5,10 @@ function repeatedString(s, n) {
     let newArr = s.split('')
 
     for(let i=0;i<remaining;i++){
-        newArr.push(s[i])
-        //agar s khtm ho jaye to dubara s laga do
+        newArr.push(s[i % initLength])
     }
-    return newArr.join('')
+    return newArr.filter((item)=> item === 'a').length
 
 }
 
-console.log(repeatedString("aba", 10))
+console.log(repeatedString("abcac", 10))

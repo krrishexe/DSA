@@ -1,1 +1,1 @@
-originalArr
+ini
