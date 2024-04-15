@@ -1,7 +1,7 @@
 ## Javascript Execution context :- 'how does code execute in js'
 
 - there are mainly three types of execution contexts.
-1).Global Execution Context.
+1). Global Execution Context.
 2). Functional Execution Context. 
 3). Eval Execution Context.
 

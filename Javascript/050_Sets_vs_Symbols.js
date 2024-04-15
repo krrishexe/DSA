@@ -6,6 +6,9 @@ mySet.add('a')
 mySet.add('b')
 mySet.add('c')
 console.log(mySet)
+for(let key of mySet){
+    console.log(key)
+}
 mySet2.add(1)
 mySet2.add(2)
 mySet2.add('x')
